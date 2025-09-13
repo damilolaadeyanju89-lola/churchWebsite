@@ -1,0 +1,7 @@
+{
+    "json.trace.server": "off",
+    "chat.agentSessionsViewLocation": "view",
+    "chat.checkpoints.enabled": true,
+    "chat.checkpoints.showFileChanges": true,
+    "chat.detectParticipant.enabled": false
+}
