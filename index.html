@@ -10,182 +10,180 @@
     <!-- Header -->
     <header>
       <div class="logo">
-        <img src="logo.jpg" alt="Logo" />
+        <img src="logo.jpg" alt="Unquestionable God Ministry Logo" />
         <h2>Unquestionable God Ministry</h2>
       </div>
-
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <div id="nav-menu">
-
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#About">Mission</a></li>
-          <li><a href="#">Sermons</a></li>
-          <li><a href="#Services">Services</a></li>
-        </ul>
-      </div>
+      <nav aria-label="Main Navigation">
+        <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="nav-menu">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">Mission</a></li>
+            <li><a href="#Sermons">Sermons</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <div id="TopContact">
-        <a href="#Contact" class="btn">Contact Us</a>
+        <a href="#Contact" class="btn" aria-label="Contact Us">Contact Us</a>
       </div>
-
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="overlay">
-        <div>
-          <h1>OUR MINISTRIES</h1>
-          <p> Come to Jesus and no codemnation in <strong>Christ
-              Jesus</strong></p>
+    <main>
+      <!-- Hero -->
+      <section id="Home" class="hero">
+        <div class="overlay">
+          <div>
+            <h1>Our Ministries</h1>
+            <p>Come to Jesus and no condemnation in <strong>Christ Jesus</strong></p>
+          </div>
+          <a href="#About" class="btn" aria-label="Learn more about our mission">Learn more</a>
         </div>
+      </section>
 
-        <a href="#" class="btn">Learn more</a>
-
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="About" class="about">
-      <div class="about-img">
-        <img src="pastor.jpg" alt="Pastor" />
-      </div>
-      <div class="about-text">
-        <h2>OUR MISSION</h2>
-        <p>
-          The church is not just a building but the gathering of God’s people,
-          united in faith and love, called to worship, serve, and share the
-          Gospel. The church is the body of Christ, a family of believers who
-          encourage one another, grow in the Word, and reflect God’s light in
-          the world.
-        </p>
-        <br>
-        <p>
-          <em>
-            Now ye are the body of Christ, and members in particular(1
-            Corinthians
-            12:27)
-          </em>
-
-        </p>
-      </div>
-    </section>
-
-    <!-- Sermons -->
-    <section class="sermons">
-      <h2>SERMONS</h2>
-      <div class="sermon-list">
-        <div class="sermon-card">
-          <iframe 
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/story.php?story_fbid=10230717422454132&id=1081285384&rdid=LgaVPYZAwezWANl8&show_text=false&width=400" 
-            width="100%" height="220" style="border:none;overflow:hidden" 
-            scrolling="no" frameborder="0" allowfullscreen="true" 
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-          </iframe>
+      <!-- About -->
+      <section id="About" class="about">
+        <div class="about-img">
+          <img src="pastor.jpg" alt="Portrait of our Pastor" />
         </div>
-        <div class="sermon-card">
-          <iframe 
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/story.php?story_fbid=10230923418363901&id=1081285384&rdid=ztvO4GV8LKNMzilu&show_text=false&width=400" 
-            width="100%" height="220" style="border:none;overflow:hidden" 
-            scrolling="no" frameborder="0" allowfullscreen="true" 
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-          </iframe>
+        <div class="about-text">
+          <h2>Our Mission</h2>
+          <p>
+            The church is not just a building but the gathering of God’s people,
+            united in faith and love, called to worship, serve, and share the
+            Gospel. The church is the body of Christ, a family of believers who
+            encourage one another, grow in the Word, and reflect God’s light in
+            the world.
+          </p>
+          <br>
+          <p>
+            <em>
+              "Now ye are the body of Christ, and members in particular" (1 Corinthians 12:27)
+            </em>
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Mission -->
-    <section class="mission">
-      <h2>OUR MISSION</h2>
-      <div class="mission-content">
-        <div class="text">
-          <h3>Unquestonable God Ministry</h3>
-          <p>Come to Jesus and no codemnation in Christ Jesus</p>
-          <a href="#" class="btn">Join Us Now</a>
+      <!-- Sermons -->
+      <section id="Sermons" class="sermons">
+        <h2>Sermons</h2>
+        <div class="sermon-list">
+          <div class="sermon-card">
+            <iframe 
+              src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/story.php?story_fbid=10230717422454132&id=1081285384&rdid=LgaVPYZAwezWANl8&show_text=false&width=400" 
+              width="100%" height="220" style="border:none;overflow:hidden" 
+              scrolling="no" frameborder="0" allowfullscreen="true" 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              title="Sermon Video 1">
+            </iframe>
+          </div>
+          <div class="sermon-card">
+            <iframe 
+              src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/story.php?story_fbid=10230923418363901&id=1081285384&rdid=ztvO4GV8LKNMzilu&show_text=false&width=400" 
+              width="100%" height="220" style="border:none;overflow:hidden" 
+              scrolling="no" frameborder="0" allowfullscreen="true" 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              title="Sermon Video 2">
+            </iframe>
+          </div>
         </div>
-        <div class="images">
-          <img src="open bible.jpg" alt="Bible" />
-          <img src="church.jpg" alt="Church" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services -->
-    <section id="Services" class="services">
-      <h1>SERVICES</h1>
-      <div class="service-list">
-        <div class="imageContainer">
-          <img src="praying1.jpg" alt="Wednesday Online Prayer" class="card-bg-img">
-          <div class="overlay">
-            <div class="text">
-              <h2>Wednesday Online Prayer</h2>
-              <p>7pm-8pm</p>
-              <a href="https://join.freeconferencecall.com/sandico_sa9" class="btn" target="_blank">Join Online</a>
-              <div class="join-info">
-                <p><strong>Dial-in:</strong> 0330 088 1937</p>
-                <p><strong>Access code:</strong> 567569</p>
+      <!-- Mission -->
+      <section class="mission">
+        <h2>Our Mission</h2>
+        <div class="mission-content">
+          <div class="text">
+            <h3>Unquestionable God Ministry</h3>
+            <p>Come to Jesus and no condemnation in Christ Jesus</p>
+            <a href="#Services" class="btn" aria-label="Join Us Now">Join Us Now</a>
+          </div>
+          <div class="images">
+            <img src="open bible.jpg" alt="Open Bible" />
+            <img src="church.jpg" alt="Church Building" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="Services" class="services">
+        <h1>Services</h1>
+        <div class="service-list">
+          <div class="imageContainer">
+            <img src="praying1.jpg" alt="Wednesday Online Prayer Service" class="card-bg-img">
+            <div class="overlay">
+              <div class="text">
+                <h2>Wednesday Online Prayer</h2>
+                <p>7pm-8pm</p>
+                <a href="https://join.freeconferencecall.com/sandico_sa9" class="btn" target="_blank" aria-label="Join Wednesday Online Prayer">Join Online</a>
+                <div class="join-info">
+                  <p><strong>Dial-in:</strong> 0330 088 1937</p>
+                  <p><strong>Access code:</strong> 567569</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imageContainer">
+            <img src="praying2.jpg" alt="Friday Night Vigil Service" class="card-bg-img">
+            <div class="overlay">
+              <div class="text">
+                <h2>Friday Night Vigil</h2>
+                <p>10pm-12am</p>
+                <a href="https://join.freeconferencecall.com/sandico_sa9" class="btn" target="_blank" aria-label="Join Friday Night Vigil">Join Online</a>
+                <div class="join-info">
+                  <p><strong>Dial-in:</strong> 0330 088 1937</p>
+                  <p><strong>Access code:</strong> 567569</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imageContainer">
+            <img src="praying3.jpg" alt="Sunday Worship Service" class="card-bg-img">
+            <div class="overlay">
+              <div class="text">
+                <h2>Sunday Worship Service</h2>
+                <p>10am-12pm</p>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Unit+3+Bolina+Road+Enterprises,+off+Liderton+road,+SE16+3LF" 
+                  class="btn" 
+                  target="_blank"
+                  aria-label="Find Sunday Worship Location"
+                >
+                  Find Us
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="imageContainer">
-          <img src="praying2.jpg" alt="Friday Night Vigil" class="card-bg-img">
-          <div class="overlay">
-            <div class="text">
-              <h2>Friday Night Vigil</h2>
-              <p>10pm-12am</p>
-              <a href="https://join.freeconferencecall.com/sandico_sa9" class="btn" target="_blank">Join Online</a>
-              <div class="join-info">
-                <p><strong>Dial-in:</strong> 0330 088 1937</p>
-                <p><strong>Access code:</strong> 567569</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="imageContainer">
-          <img src="praying3.jpg" alt="Sunday Worship Service" class="card-bg-img">
-          <div class="overlay">
-            <div class="text">
-              <h2>Sunday Worship Service</h2>
-              <p>10am-12pm</p>
-              <a 
-                href="https://www.google.com/maps/search/?api=1&query=Unit+3+Bolina+Road+Enterprises,+off+Liderton+road,+SE16+3LF" 
-                class="btn" 
-                target="_blank"
-              >
-                Find Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer>
       <div class="footer-left">
-        <img src="logo.jpg" alt="Logo" />
-        <h3>Unquestionable God ministry</h3>
-        <p>Come to Jesus and no Condemnation in Christ Jesus</p>
+        <img src="logo.jpg" alt="Unquestionable God Ministry Logo" />
+        <h3>Unquestionable God Ministry</h3>
+        <p>Come to Jesus and no condemnation in Christ Jesus</p>
         <div class="socials">
-          <a href="#"><img src="facebook icon.jpg" alt="Facebook" /></a>
-          <a href="#"><img src="x icon.jpg" alt="X" /></a>
-          <a href="#"><img src="intagram icon.jpg" alt="Instagram" /></a>
+          <a href="https://facebook.com" aria-label="Facebook"><img src="facebook icon.jpg" alt="Facebook Icon" /></a>
+          <a href="https://twitter.com" aria-label="X"><img src="x icon.jpg" alt="X Icon" /></a>
+          <a href="https://instagram.com" aria-label="Instagram"><img src="intagram icon.jpg" alt="Instagram Icon" /></a>
         </div>
       </div>
 
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Sermons</a></li>
-          <li><a href="#">Missions</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Sermons">Sermons</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
         </ul>
       </div>
 

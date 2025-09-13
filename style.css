@@ -441,6 +441,7 @@ header .logo h2 {
   margin-bottom: 24px;
 }
 
+/* Responsive Service Cards */
 .service-list {
   display: flex;
   flex-wrap: wrap;
@@ -448,25 +449,25 @@ header .logo h2 {
   align-items: stretch;
   gap: 32px;
   width: 100%;
-}
-
-.service-list img {
-  max-height: 20vh;
-  border-radius: 10px;
+  /* Ensure cards wrap and don't overflow */
+  box-sizing: border-box;
 }
 
 .imageContainer {
   position: relative;
   flex: 1 1 300px;
-  min-width: 250px;
+  min-width: 220px;
   max-width: 350px;
+  width: 100%;
   display: flex;
   align-items: stretch;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 2px 16px rgba(157, 135, 222, 0.10);
   margin: auto;
-  background: #222; /* fallback color */
+  background: #222;
+  /* Prevent overflow on small screens */
+  box-sizing: border-box;
 }
 
 .imageContainer .card-bg-img {
@@ -489,35 +490,59 @@ header .logo h2 {
   align-items: center;
   z-index: 2;
   padding: 20px;
+  box-sizing: border-box;
+  /* Responsive padding */
 }
 
 .imageContainer .text {
   color: #fff;
   text-align: center;
   z-index: 3;
+  word-break: break-word;
+  width: 100%;
+  /* Prevent text overflow */
+  overflow-wrap: break-word;
 }
 
-.imageContainer .btn {
-  margin-top: 12px;
-  background: gold;
-  color: #232323;
-  padding: 10px 28px;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  box-shadow: 0 2px 8px rgba(157, 135, 222, 0.15);
-  border: none;
-  outline: none;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-  cursor: pointer;
-  display: inline-block;
+.join-info {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  word-break: break-word;
+  width: 100%;
 }
 
-.imageContainer .btn:hover {
-  background: #bb9005;
-  color: #fff;
-  box-shadow: 0 4px 16px rgba(157, 135, 222, 0.25);
-  transform: translateY(-2px) scale(1.05);
+/* Responsive adjustments for service cards */
+@media (max-width: 992px) {
+  .service-list {
+    gap: 20px;
+  }
+  .imageContainer {
+    min-width: 180px;
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-list {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .imageContainer {
+    min-width: 90vw;
+    max-width: 98vw;
+    width: 100%;
+    margin: 0;
+  }
+  .imageContainer .overlay {
+    padding: 12px;
+  }
+  .imageContainer .text h2 {
+    font-size: 1.2rem;
+  }
+  .join-info {
+    font-size: 0.9rem;
+  }
 }
 
 /* Footer */
